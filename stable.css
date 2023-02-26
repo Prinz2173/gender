@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    
+}
+
+.tools{
+    background-color: white;
+    padding: .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.toolButton{
+    background-color: transparent;
+    border: 3px solid transparent;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    transition: .5s;
+}
+
+.toolButton:hover{
+    border-bottom: 3px solid black;
+}
+
+.saveButton{
+    background-color: transparent;
+    padding: .1rem;
+    border: 3px solid transparent;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    transition: .5s;
+}
+
+.saveButton:hover{
+    background-color: black;
+    color: white;
+    border: 3px solid gray;
+}
+
+.calendar{
+    border: 2px solid black;
+    background: black url(imagens/pexels-travis-rupert-1032650.jpg) no-repeat center center/cover fixed;
+    text-align: center;
+}
+.weekDaysContent{
+    width: 100%;
+    padding: .2rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 2rem;
+    gap: .2rem;
+}
+
+.weekDay{
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.calendarContainer{
+    width: 100%;
+    height: 100%;
+    padding: .2rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 6rem;
+    gap: .2rem;
+}
+.day{
+    background-color: transparent;
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.blocked{
+    color: rgba(0, 0, 0, 0.438)
+}
+
+.choosenTool{
+    background-color: black;
+    color: white;
+}
+
+.selectDay{
+    background-color: blue !important;
+}
+
+.markDay{
+    background-color: red;
+}
+.betweenMarkDays{
+    background-color: purple;
+}
+.eventDay{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+#eventInput{
+    width: 100%;
+}
+.eventText{
+    background-color: rgba(0, 0, 0, 0.425);
+    color: white;
+    font-size: 1rem;
+}
+abbr{
+    text-decoration: none;
+}
+
+@media (max-width: 770px) {
+    .toolButton{
+        font-size: 1rem;
+    }
+    .calendar{
+        background: white;
+    }
+    .day{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 650px) {
+    *{
+        font-size: 15px;
+    }
+    .month{
+        font-size: 1.5rem;
+    }
+    .weekDaysContent{
+        padding: 0;
+        gap: 0;
+    }
+    .weekDay{
+        padding: .1rem;
+    }
+    .calendarContainer{
+        padding: 0;
+        gap: 0;
+    }
+}
+@media (max-width: 425px) {
+    *{
+        font-size: 13px;
+    }
+    .tools{
+        justify-content: space-between;
+        gap: 0;
+    }
+    .toolButton{
+        border: 1px solid transparent;
+    }
+    .saveButton{
+        border: 1px solid transparent;
+    }
+    .month{
+        padding: 20px 0;
+    }
+    .calendarContainer{
+        grid-auto-rows: 7rem;
+    }
+    .day{
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .eventDay{
+        background-color: #137f63;
+    }
+}
