@@ -1,4 +1,4 @@
-let monthDays = document.querySelectorAll('.february')
+let monthDays = document.querySelectorAll('.march')
 const saveBtn = document.querySelector('#saveGender')
 let blockedDays = []
 let eventDays = []

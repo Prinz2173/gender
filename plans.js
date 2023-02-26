@@ -1,4 +1,4 @@
-let februaryDays = document.querySelectorAll('.february')
+let februaryDays = document.querySelectorAll('.march')
 let tools = document.querySelectorAll('.toolButton')
 const selectButton = document.querySelector('#select')
 const markButton = document.querySelector('#mark')
