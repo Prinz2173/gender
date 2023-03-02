@@ -1,2 +1,2 @@
-# gender
- Gender made with HTML, CSS and JS
+# Schedule
+ Schedule made with HTML, CSS and JS
