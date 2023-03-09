@@ -1,0 +1,23 @@
+h1{
+    color: white;
+}
+
+.calendar{
+    border: 2px solid black;
+    background: black url('../../imagens/december.jpg') no-repeat center center/cover fixed;
+    text-align: center;
+}
+
+.weekDay{
+    color: white;
+    border-color: white;
+}
+
+.day{
+    color: white;
+    border: 1px solid white;
+}
+
+.blocked{
+    color: rgba(255, 255, 255, 0.37);
+}

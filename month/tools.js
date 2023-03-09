@@ -1,4 +1,5 @@
-let februaryDays = document.querySelectorAll('.march')
+let month = document.querySelector('h1').dataset.month
+let februaryDays = document.querySelectorAll(`${month}`)
 let tools = document.querySelectorAll('.toolButton')
 const selectButton = document.querySelector('#select')
 const markButton = document.querySelector('#mark')

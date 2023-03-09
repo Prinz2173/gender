@@ -48,7 +48,7 @@
 
 .calendar{
     border: 2px solid black;
-    background: black url(imagens/pexels-travis-rupert-1032650.jpg) no-repeat center center/cover fixed;
+    background: black;
     text-align: center;
 }
 .weekDaysContent{

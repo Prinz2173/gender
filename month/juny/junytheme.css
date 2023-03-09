@@ -1,0 +1,5 @@
+.calendar{
+    border: 2px solid black;
+    background: black url('../../imagens/juny.jpg') no-repeat center center/cover fixed;
+    text-align: center;
+}

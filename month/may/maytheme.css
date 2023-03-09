@@ -1,0 +1,9 @@
+.calendar{
+    border: 2px solid black;
+    background: black url('../../imagens/may.jpg') no-repeat center center/cover fixed;
+    text-align: center;
+}
+
+.day{
+    font-weight: bolder;
+}
